@@ -100,6 +100,6 @@ resource "aws_lb" "test" {
   subnets = ["subnet-0be6c6316018feb5d","subnet-01c6e6c74756bdee3", "subnet-0391f7027a54a4e77"]
 
 
-  enable_deletion_protection = true
+  enable_deletion_protection = false
 
 }
