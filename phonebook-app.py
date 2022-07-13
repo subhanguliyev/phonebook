@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # Configure mysql database
 
-app.config['MYSQL_DATABASE_HOST'] = 'phonebook-app-db.cchvfekigyh7.eu-central-1.rds.amazonaws.com'
+app.config['MYSQL_DATABASE_HOST'] = 'terraform-20220713102854515700000003.cchvfekigyh7.eu-central-1.rds.amazonaws.com'
 app.config['MYSQL_DATABASE_USER'] = 'admin'
 app.config['MYSQL_DATABASE_PASSWORD'] = '12345678'
 app.config['MYSQL_DATABASE_DB'] = 'phonebook_app_db'

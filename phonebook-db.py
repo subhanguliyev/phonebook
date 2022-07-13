@@ -12,6 +12,7 @@ config = {
 
 
 # phonebook-app-db.cchvfekigyh7.eu-central-1.rds.amazonaws.com
+# terraform-20220713102854515700000003.cchvfekigyh7.eu-central-1.rds.amazonaws.com
 
 # Write a function named `init_phonebook_db` which initializes the phonebook db
 # Create phonebook table within mysql db and populate with sample data
