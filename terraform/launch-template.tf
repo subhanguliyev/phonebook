@@ -12,20 +12,21 @@ resource "aws_launch_template" "back_end" {
 	key_name 				= "<your_key>"
 
 	network_interfaces {
-		associate_public_ip_address 	= true
+	associate_public_ip_address 		= true
 
-		security_groups 		= [
+	security_groups 			= [
 			aws_security_group.ec2-sg.id,
       			aws_security_group.ssh.id
 		]
 	}
 
-	placement {availability_zone 	= "eu-central-1"}
+	placement {availability_zone 		= "eu-central-1"}
 
 	tag_specifications {
-		resource_type 		= "instance"
-		tags 			= {Name = "back-end"}
+		resource_type 			= "instance"
+		tags 				= {
+		Name   				= "back-end"
+		}
 	}
-
-	user_data  			= filebase64("terraform/install_nginx.sh")
+		user_data 			= file("install_nginx.sh")
 }
